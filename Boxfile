@@ -1,0 +1,23 @@
+web1:
+  php_session_save_handler: memcache
+  php_session_save_path: tcp://tunnel.pagodabox.com:11211
+  php_session_cookie_lifetime: 2592000
+  document_root: web/
+  php_version: 5.3.8
+  shared_writable_dirs:
+    - logs
+    - app/cache
+    - app/logs
+    - app/spool
+  php_extensions:
+    - pdo_mysql
+    - mysql
+    - gd
+    - curl
+    - mcrypt
+    - mysqli
+    - mbstring
+    - memcache
+    - memcached
+    - apc
+    - zip
